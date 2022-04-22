@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", "sans serif";
+}
+
+html {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #121417;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  font-weight: 700;
+  border-style: none;
+}
+
+div.main {
+  width: 23rem;
+  margin: 0 5vw 0 5vw;
+  height: 25rem;
+  color: white;
+  background-color: #18202b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 2rem;
+  padding: 2.5rem;
+}
+
+div.main div.text {
+  width: 100%;
+}
+
+div.main div.text p {
+  margin-top: 1rem;
+  color: #959eac;
+  line-height: 1.8rem;
+}
+
+div.main#normal-state {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+div.main#normal-state div#image {
+  background-color: #252d37;
+}
+
+div.main#normal-state div#image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 99px;
+}
+
+div.main#normal-state div#buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+div.main#normal-state div#buttons button {
+  text-align: center;
+  background-color: #252d37;
+  font-size: 1.1rem;
+  color: #959eac;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 99px;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+
+div.main#normal-state div#buttons button:hover {
+  background-color: #7c8798;
+  color: white;
+}
+
+div.main#normal-state div#buttons button.selected {
+  background-color: #fb7413;
+  color: white;
+}
+
+div.main#normal-state button#submit {
+  letter-spacing: .15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #fb7413;
+  border-radius: 2rem;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+
+div.main#normal-state button#submit:hover, div.main#normal-state button#submit:active {
+  color: #fb7413;
+  background-color: white;
+}
+
+div.main#thank-you-state {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.main#thank-you-state p#rating-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  color: #fb7413;
+  width: 55%;
+  height: 2rem;
+  background-color: #252d37;
+}
+
+div.main#thank-you-state div.text {
+  text-align: center;
+  width: 99%;
+}
+/*# sourceMappingURL=style.css.map */
